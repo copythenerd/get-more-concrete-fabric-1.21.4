@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1.0,
+	"id": "get-more-concrete",
+	"version": "${version}",
+	"name": "Get More Concrete",
+	"description": "Minecraft deserves (to be) more concrete. Gone are days where one would have to approximate monochrome designs by non-uniform-colored vanilla blocks. This mod finally adds stairs, slabs and walls in their respective vanilla concrete material to bring more creative versatility to the game.",
+	"authors": [
+		"CopyTheNerd"
+	],
+	"contact": {
+		"homepage": "https://github.com/copythenerd",
+		"sources": "NA"
+	},
+	"license": "MIT",
+	"icon": "assets/get-more-concrete/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.copythenerd.getmoreconcrete.GetMoreConcrete"
+		],
+		"fabric-datagen": [
+			"com.copythenerd.getmoreconcrete.GetMoreConcreteDataGenerator"
+		],
+		"client": [
+			"com.copythenerd.getmoreconcrete.GetMoreConcreteClient"
+		]
+	},
+	"mixins": [
+		"get-more-concrete.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
